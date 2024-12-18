@@ -1,4 +1,4 @@
-# Ghost Starter Theme
+# Sergey Coder Theme
 
 A starter framework for Ghost themes! Click **Use this template** to create a copy of this repo for everything you need to get started developing a custom Ghost theme.
 

@@ -1,20 +1,53 @@
 {{!< default}}
+
 <div class="gh-page">
     <div class="gh-container">
+        <header class="gh-header">
+            <h1 class="gh-header-title">Hi, I'm Sergey 👋</h1>
+            <p class="gh-header-description">
+                I'm a seasoned product engineer with expertise in developing complex web applications. Currently building at Rabbit Inc, previously led frontend engineering at Doxel.ai and contributed to AI-powered solutions at Veritone.
+            </p>
+        </header>
 
-        <div class="gh-postfeed">
-        {{#foreach posts}}
-
-            {{> "card" page=../pagination.page }} {{!-- partials/card.hbs --}}
-
-        {{/foreach}}
-        </div>
-
-        {{!-- If JS isn't enabled, fallback to standard pagination --}}
-        <noscript>
-            <div class="gh-pagination">
-                {{pagination}}
+        <section class="gh-section">
+            <h2 class="gh-section-title">What I Do</h2>
+            <div class="gh-section-content">
+                <p>
+                    I specialize in building web applications with complex user interfaces, leveraging innovative technical designs to deliver ambitious, business-critical projects with rapid turnaround.
+                </p>
+                <p>
+                    My work spans diverse industries including construction, AI, telecommunications, finance, and business intelligence.
+                </p>
             </div>
-        </noscript>
+        </section>
+
+        <section class="gh-section">
+            <h2 class="gh-section-title">Recent Posts</h2>
+            <div class="gh-postfeed">
+                {{#foreach posts}}
+                    {{> "card" page=../pagination.page}} {{!-- partials/card.hbs --}}
+                {{/foreach}}
+            </div>
+
+            {{!-- If JS isn't enabled, fallback to standard pagination --}}
+            <noscript>
+                <div class="gh-pagination">
+                    {{pagination}}
+                </div>
+            </noscript>
+        </section>
+
+        <section class="gh-section">
+            <h2 class="gh-section-title">Let's Connect</h2>
+            <div class="gh-section-content">
+                <p>
+                    Feel free to reach out if you'd like to discuss web development, frontend engineering, or potential collaborations.
+                </p>
+                <div class="gh-social-links">
+                    <a href="https://www.linkedin.com/in/sergeycoder" class="gh-social-link">LinkedIn</a>
+                    <a href="mailto:sergzak022@gmail.com" class="gh-social-link">Email</a>
+                </div>
+            </div>
+        </section>
     </div>
 </div>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" {{#if width}}width="{{width}}"{{/if}} class="{{#if class}}{{class}}{{/if}}">
+ <!-- Prompt symbol group -->
+ <g class="prompt">
+   <path d="M15 20 L25 27 L15 34"
+         fill="none"
+         stroke="#4B5563"
+         stroke-width="4.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"/>
+ </g>
+
+ <!-- Text group -->
+ <g class="text">
+   <text font-family="Courier, 'Courier New', monospace" 
+         font-size="24"
+         font-weight="700">
+     <tspan x="35" y="32" fill="#374151">sergey</tspan>
+     <tspan x="125" y="32" fill="#6B7280">coder</tspan>
+   </text>
+ </g>
+
+ <!-- Cursor group -->
+ <g class="cursor">
+   <rect x="205" y="15" width="2" height="20" fill="#4B5563">
+     <animate attributeName="opacity"
+              values="1;0;1"
+              dur="1.5s"
+              repeatCount="indefinite"/>
+   </rect>
+ </g>
+</svg>

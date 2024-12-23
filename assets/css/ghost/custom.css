@@ -15,6 +15,94 @@ body {
     font-weight: 400;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-container {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 0;
+}
+
+.nav-logo {
+    height: auto;
+    vertical-align: middle;
+}
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Optional: Add hover effect */
+.logo-link:hover .nav-logo {
+    opacity: 0.7;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link:hover {
+    color: var(--text-color);
+}
+
+.nav-link-external {
+    display: flex;
+    align-items: center;
+}
+
+.external-link-icon {
+    width: 14px;
+    height: 14px;
+}
+
+/* Modify your existing hero-section styles to account for the navbar */
+.hero-section {
+    margin-top: 60px; /* Add this line to account for the fixed navbar */
+}
+
+/* Add these to your media queries */
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
 .site-wrapper {
     min-height: 100vh;
     display: flex;
@@ -23,7 +111,7 @@ body {
 
 .hero-section {
     position: relative;
-    height: 20vh;
+    height: 140px;
     overflow: visible;
     margin-bottom: 100px;
 }
@@ -84,15 +172,15 @@ body {
 
 .profile-container {
     position: absolute;
-    bottom: -100px;
+    bottom: -75px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
 }
 
 .profile-wrapper {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--background-color);
@@ -108,7 +196,6 @@ body {
 .content-section {
     background-color: var(--background-color);
     flex-grow: 1;
-    padding-top: 30px;
 }
 
 .content-wrapper {
@@ -122,10 +209,10 @@ body {
     margin-bottom: 4rem;
 }
 
-.intro-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    font-weight: 800;
+.intro-content .name {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
     line-height: 1.2;
 }
 
@@ -190,7 +277,7 @@ body {
 
 @media (max-width: 768px) {
     .hero-section {
-        height: 25vh;
+        height: 15vh;
     }
 
     .profile-wrapper {
@@ -214,4 +301,40 @@ body {
     .contact-link {
         font-size: 1.3rem;
     }
+}
+
+.tagline {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-text, .collab-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.inline-link {
+    color: var(--text-color) !important;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    font-weight: 600;
+}
+
+.inline-link:hover {
+    opacity: 0.8;
+}
+
+.site-footer {
+    margin-top: 6rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: var(--text-secondary);
 }

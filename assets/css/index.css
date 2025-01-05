@@ -36,7 +36,12 @@ html,
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #ffffff;
+    background-color: var(--background-color);
+}
+
+.gh-header-offset {
+  position: relative;
+  top: 60px;
 }
 
 .gh-main {
@@ -50,7 +55,8 @@ html,
 }
 
 .gh-article {
-    padding: 8vmin 0;
+    position: relative;
+    padding: 4vmin 0;
 }
 
 .gh-postfeed {
@@ -179,8 +185,8 @@ html,
 /* ---------------------------------------------------------- */
 
 .gh-header {
-    padding: 0 0 8vmin 0;
-    text-align: center;
+    padding: 60px 0 4vmin 0;
+    text-align: left;
 }
 
 .gh-post-meta {

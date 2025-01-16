@@ -101,8 +101,8 @@
     .gh-canvas blockquote,
     .gh-canvas ol,
     .gh-canvas ul,
-    .gh-canvas dl,
-    .gh-canvas p {
+    .gh-canvas dl/*,
+    .gh-canvas p*/ {
         font-size: 1.8rem;
     }
 

@@ -1,7 +1,7 @@
 // Calculate years since a given date
 function calculateYearsSince(startDateString) {
     const startDate = new Date(startDateString); // Parse the start date
-    const string = ""
+    let string = ""
     string += `${startDate} \n`
     const now = new Date(); // Current date
     let years = now.getFullYear() - startDate.getFullYear();

@@ -19,9 +19,10 @@
     /* custom */
     --content-max-width: 900px;
 
+    --font-sans-serif: 'Comfortaa', sans-serif;
     /* Fonts */
-    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: Georgia, Times, serif;
+    /*--font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;*/
+    --font-serif: "Forum", serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
     --font-normal: 400;

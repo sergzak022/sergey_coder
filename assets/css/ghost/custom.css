@@ -293,7 +293,7 @@ body {
     }
 
     .intro-text {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .info-section p {
@@ -302,7 +302,7 @@ body {
 
     .current-list,
     .contact-link {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 }
 
@@ -318,7 +318,7 @@ body {
 }
 
 .about-text, .collab-text {
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 1.6;
     color: var(--text-secondary);
 }

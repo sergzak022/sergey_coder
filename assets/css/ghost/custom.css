@@ -320,6 +320,12 @@ body {
     margin-bottom: 1rem;
 }
 
+@media (min-width: 769px) {
+    .intro-content .about-text + .about-text {
+        margin-top: 3rem;
+    }
+}
+
 .about-text, .collab-text {
     font-size: 2rem;
     line-height: 1.6;
